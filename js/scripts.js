@@ -32,4 +32,14 @@ var numOfLetters = function(string) {
   return newString + string;
 }
 
-alert(numOfLetters(addToString(userInput, switchOrder(firstLastLetter(userInput)))));
+
+var reverseString = function(string) {
+  var numOfChar = string.length-1;
+  var newString = "";
+  for i=numOfChar; i=0; i-=1; {
+    var newstring += string.charAt(i);
+  }
+  return newString;
+}
+
+alert(reverseString(userInput));
